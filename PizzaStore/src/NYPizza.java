@@ -1,6 +1,7 @@
 
-public class NYPizza {
-	public NYPizza createNYPizza() {
+public class NYPizza implements Pizza{
+	
+	public NYPizza createPizza() {
 		NYPizza nyPizza = new NYPizza();
 		
 //		baking nyPizza process

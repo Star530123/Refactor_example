@@ -1,16 +1,10 @@
 
 public class User {
-	private PizzaStore pizzaStore = new PizzaStore();
 	
-	public NYPizza orderNYPizza() {
-		return pizzaStore.createNYPizza();
-	}
-	
-	public ChicagoPizza orderChicagoPizza() {
-		return pizzaStore.createChicagoPizza();
-	}
-	
-	public CheesePizza orderCheesePizza() {
-		return pizzaStore.createCheesePizza();
+	public static void main(String[] args) {
+		PizzaStore pizzaStore = new PizzaStore();
+		Pizza nypizza = new NYPizza();
+		NYPizza bakedPizza = (NYPizza) pizzaStore.order(nypizza);
+//		System.out.println(bakedPizza);
 	}
 }

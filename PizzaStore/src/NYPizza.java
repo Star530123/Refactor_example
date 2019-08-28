@@ -7,7 +7,7 @@ public class NYPizza implements Pizza{
 //		baking nyPizza process
 //		...
 //		add double cheese ....
-		
+		System.out.println("NYPizza");
 		return nyPizza;
 	}
 }
